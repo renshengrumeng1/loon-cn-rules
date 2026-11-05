@@ -1,6 +1,6 @@
 # Loon 规则集（自用整理）
 
-三个远程规则文件，配合 Loon 使用。本仓库由 GitHub Actions 每周一自动从源仓库拉取数据、重建并提交（见 build_rules.py），不依赖任何 VPS 或人工维护。
+三个远程规则文件，配合 Loon 使用。每周从源仓库自动重建更新，不依赖任何 VPS。
 
 ## 1. 国内直连 cn-direct.list
 
