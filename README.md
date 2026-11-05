@@ -1,6 +1,6 @@
 # Loon 规则集（自用整理）
 
-三个远程规则文件，配合 Loon 使用，服务器每周自动重建并同步到本仓库。
+三个远程规则文件，配合 Loon 使用。每周从源仓库自动重建并推送到本仓库，与任何 VPS 无关，换服务器不受影响。
 
 ## 1. 国内直连 cn-direct.list
 
@@ -32,4 +32,4 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/apple.list
 
 ## 数据来源
 
-规则源：[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（经 [luestr/ShuntRules](https://github.com/luestr/ShuntRules) 索引整理）。同内容镜像：`https://ql.pokoc.com:8444/sub/<文件名>`。
+规则源：[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（经 [luestr/ShuntRules](https://github.com/luestr/ShuntRules) 索引整理）。
