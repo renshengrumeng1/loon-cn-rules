@@ -1,6 +1,6 @@
 # 苹果全家桶规则（Loon 远程规则版，策略在 Loon 里选 DIRECT）
 # 数据来源：blackmatrix7/ios_rule_script（AppleDaily 是香港苹果日报新闻，已排除）
-# 服务器每周自动更新，上次更新：2026-11-05 10:13 CST，共 12 个分组、1697 条规则
+# 服务器每周自动更新，上次更新：2026-11-05 10:19 CST，共 13 个分组、1698 条规则
 
 # ===== 苹果服务总集 (1615) =====
 DOMAIN-KEYWORD,apple-support.akadns.net
@@ -1619,6 +1619,10 @@ IP-CIDR6,2403:300::/32
 IP-CIDR6,2620:149::/32
 IP-CIDR6,2a01:b740::/32
 
+# ===== App Store (2) =====
+DOMAIN,apps.apple.com
+DOMAIN,itunes.apple.com
+
 # ===== iCloud (5) =====
 DOMAIN-SUFFIX,gc.apple.com
 DOMAIN-SUFFIX,icloud.apple.com
@@ -1690,7 +1694,7 @@ DOMAIN-SUFFIX,timestamp.apple.com
 DOMAIN-SUFFIX,icloud.com.akadns.net
 DOMAIN-SUFFIX,itunes-apple.com.akadns.net
 
-# ===== 苹果代理服务 (24) =====
+# ===== 苹果代理服务 (23) =====
 DOMAIN,api-glb-sea.smoot.apple.com
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,books.itunes.apple.com
@@ -1701,7 +1705,6 @@ DOMAIN,devimages-cdn.apple.com
 DOMAIN,devstreaming-cdn.apple.com
 DOMAIN,docs-assets.developer.apple.com
 DOMAIN,hls-svod.itunes.apple.com
-DOMAIN,itunes.apple.com
 DOMAIN,js-cdn.music.apple.com
 DOMAIN,lookup-api.apple.com
 DOMAIN,mask-api.icloud.com
