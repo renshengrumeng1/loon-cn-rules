@@ -40,8 +40,16 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/anti-ip.lis
 - 策略选**你想让归属地显示的节点组**（如某个省的节点/家宽线）
 - 微博、抖音、小红书、知乎、贴吧、B站等会显示 IP 归属地的 App：只把定位接口（233 条）送代理，其余流量不动；文件内已标注的 REJECT（定位/HTTPDNS 拦截）与 DIRECT（视频 CDN）按标注执行
 - 数据来源：[SunsetMkt/anti-ip-attribution](https://github.com/SunsetMkt/anti-ip-attribution)
-- 免责声明（源项目）：本项目仅用于学习交流，请在遵守所在地法律法规的前提下使用。本项目记录的 API 域名地址信息可以被任何人通过开发人员工具获取，没有经过逆向工程或网络攻击，不构成入侵计算机系统。请不要在中华人民共和国境内使用此项目。
+- 免责声明见文末（源项目原文）。
 
 ## 数据来源
 
 规则源：[blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)（经 [luestr/ShuntRules](https://github.com/luestr/ShuntRules) 索引整理）。
+
+## 免责声明
+
+本项目仅用于学习交流，请在遵守所在地法律法规的前提下使用。
+
+本项目记录的 API 域名地址信息可以被任何人通过开发人员工具获取，没有经过逆向工程或网络攻击，不构成入侵计算机系统。
+
+请不要在中华人民共和国境内使用此项目。
