@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/ai.list
 
 - 策略选**节点策略组**（走代理）
 - OpenAI/ChatGPT、Claude、Gemini、Copilot、必应、Civitai，外加人工补充的 Grok、Perplexity、Poe、Midjourney、HuggingFace 等
+- 苹果智能 Apple Intelligence（源：[RocM301/Apple-Rule](https://github.com/RocM301/Apple-Rule)）——锁区服务，必须走支持地区节点，故并入本文件随代理走
 
 ## 3. 苹果全家桶 apple.list
 
