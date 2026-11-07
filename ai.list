@@ -1,6 +1,6 @@
 # AI 服务规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
 # 数据来源：blackmatrix7/ios_rule_script + 人工补充 + 苹果智能(RocM301/Apple-Rule)
-# 服务器每周自动更新，上次更新：2026-11-07 22:45 CST，共 11 个分组、118 条规则
+# 服务器每周自动更新，上次更新：2026-11-07 22:54 CST，共 12 个分组、145 条规则
 
 # ===== OpenAI·ChatGPT (38) =====
 DOMAIN,browser-intake-datadoghq.com
@@ -120,6 +120,35 @@ DOMAIN-SUFFIX,elevenlabs.io
 # ===== Meta AI 实时通话·直连 (DIRECT) (2) =====
 DOMAIN-SUFFIX,meta-ai-realtime.facebook.com,DIRECT
 DOMAIN-SUFFIX,edge-stun.facebook.com,DIRECT
+
+# ===== 主流补充·可莉AI.lsr精选 (27) =====
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+DOMAIN,aistudio.google.com
+DOMAIN,notebooklm.google
+DOMAIN,notebooklm.google.com
+DOMAIN,jules.google.com
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN,aiplatform.googleapis.com
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,meta.ai
+DOMAIN,imagine.meta.com
+DOMAIN,api.moonshot.ai
+DOMAIN,api.kimi.ai
+DOMAIN,api.siliconflow.com
+DOMAIN-SUFFIX,z.ai
+DOMAIN-SUFFIX,minimax.io
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,fireworks.ai
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,perplexity.com
 
 # ===== 苹果智能Apple Intelligence·RocM301 (19) =====
 DOMAIN,guzzoni.apple.com
