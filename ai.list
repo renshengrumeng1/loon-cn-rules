@@ -1,6 +1,6 @@
 # AI 服务规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
 # 数据来源：blackmatrix7/ios_rule_script + 人工补充 + 苹果智能(RocM301/Apple-Rule)
-# 服务器每周自动更新，上次更新：2026-11-05 10:24 CST，共 10 个分组、116 条规则
+# 服务器每周自动更新，上次更新：2026-11-07 22:45 CST，共 11 个分组、118 条规则
 
 # ===== OpenAI·ChatGPT (38) =====
 DOMAIN,browser-intake-datadoghq.com
@@ -116,6 +116,10 @@ DOMAIN-SUFFIX,character.ai
 DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,suno.com
 DOMAIN-SUFFIX,elevenlabs.io
+
+# ===== Meta AI 实时通话·直连 (DIRECT) (2) =====
+DOMAIN-SUFFIX,meta-ai-realtime.facebook.com,DIRECT
+DOMAIN-SUFFIX,edge-stun.facebook.com,DIRECT
 
 # ===== 苹果智能Apple Intelligence·RocM301 (19) =====
 DOMAIN,guzzoni.apple.com
