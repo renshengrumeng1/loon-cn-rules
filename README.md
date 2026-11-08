@@ -1,6 +1,6 @@
 # Loon 规则集（自用整理）
 
-四个远程规则文件，配合 Loon 使用。每周从源仓库自动重建更新，不依赖任何 VPS。
+五个远程规则文件，配合 Loon 使用。每周从源仓库自动重建更新，不依赖任何 VPS。
 
 ## 1. 国内直连 cn-direct.list
 
@@ -41,6 +41,16 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/anti-ip.lis
 - 微博、抖音、小红书、知乎、贴吧、B站等会显示 IP 归属地的 App：只把定位接口（233 条）送代理，其余流量不动；文件内已标注的 REJECT（定位/HTTPDNS 拦截）与 DIRECT（视频 CDN）按标注执行
 - 数据来源：[SunsetMkt/anti-ip-attribution](https://github.com/SunsetMkt/anti-ip-attribution)
 - 免责声明见文末（源项目原文）。
+
+## 5. TikTok tiktok.list
+
+```
+https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/tiktok.list
+```
+
+- 策略选**节点策略组**（TikTok 锁区，必须走非大陆节点，如美国/日本组）
+- 位置放在 **cn-direct 上面**（cn-direct 里有一条 USER-AGENT,TikTok* 会把 TikTok 误判直连，放上面先命中走节点）
+- 已剔除与抖音共用的 snssdk.com，抖音直连不受影响
 
 ## 数据来源
 
