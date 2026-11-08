@@ -1,6 +1,6 @@
 # TikTok 分流规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
-# 数据来源：blackmatrix7/ios_rule_script（已剔除与抖音共用的 snssdk.com）
-# 服务器每周自动更新，上次更新：2026-11-08 09:48 CST，共 1 个分组、34 条规则
+# 数据来源：blackmatrix7/ios_rule_script + YFamily（CDN/Shop 补充）；已剔除与抖音共用的 snssdk.com 与 AppsFlyer 统计
+# 服务器每周自动更新，上次更新：2026-11-08 09:53 CST，共 2 个分组、61 条规则
 
 # ===== TikTok (34) =====
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
@@ -37,3 +37,32 @@ DOMAIN-SUFFIX,ttwebview.com
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
 USER-AGENT,TikTok*
+
+# ===== CDN与Shop补充·YFamily (27) =====
+DOMAIN,p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
+DOMAIN-SUFFIX,analytics.tiktok.com
+DOMAIN-SUFFIX,capcutcdn-us.com
+DOMAIN-SUFFIX,tiktok-minis.com
+DOMAIN-SUFFIX,tiktok-row.net
+DOMAIN-SUFFIX,tiktokcdn-eu.com
+DOMAIN-SUFFIX,tiktokcdn-us.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokcdn.com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokeu-cdn.com
+DOMAIN-SUFFIX,tiktokglobalshopv.com
+DOMAIN-SUFFIX,tiktokminis.us
+DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokstaticb.com
+DOMAIN-SUFFIX,tiktokv.com.edgekey.net
+DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokv.eu
+DOMAIN-SUFFIX,tiktokvapp.com
+DOMAIN-SUFFIX,tiktokw.eu
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,ttcdn-us.com
+DOMAIN-SUFFIX,ttlivecdn.com
+DOMAIN-SUFFIX,ttoverseaus.net
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-KEYWORD,-tiktokcdn-com
+DOMAIN-KEYWORD,tiktokcdn
