@@ -1,8 +1,8 @@
 # 苹果全家桶规则（Loon 远程规则版，策略在 Loon 里选 DIRECT）
 # 数据来源：blackmatrix7/ios_rule_script（AppleDaily 是香港苹果日报新闻，已排除）
-# 服务器每周自动更新，上次更新：2026-11-05 10:24 CST，共 14 个分组、1699 条规则
+# 服务器每周自动更新，上次更新：2026-11-08 22:49 CST，共 14 个分组、1703 条规则
 
-# ===== 苹果服务总集 (1615) =====
+# ===== 苹果服务总集 (1614) =====
 DOMAIN-KEYWORD,apple-support.akadns.net
 DOMAIN-KEYWORD,apple.com.akadns.net
 DOMAIN-KEYWORD,apple.com.edgekey.net
@@ -98,7 +98,6 @@ DOMAIN-SUFFIX,airtunes.com
 DOMAIN-SUFFIX,airtunes.info
 DOMAIN-SUFFIX,airtunes.net
 DOMAIN-SUFFIX,ajtalk.com
-DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,albeats.com
 DOMAIN-SUFFIX,alchemysynth.com
 DOMAIN-SUFFIX,annstores.net
@@ -1726,5 +1725,10 @@ DOMAIN,mask.apple-dns.net
 DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
 
-# ===== 苹果推送·人工补充 (1) =====
+# ===== 苹果推送·人工补充 (6) =====
 DOMAIN-SUFFIX,push.apple.com
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
