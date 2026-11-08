@@ -1,6 +1,6 @@
 # 苹果全家桶规则（Loon 远程规则版，策略在 Loon 里选 DIRECT）
 # 数据来源：blackmatrix7/ios_rule_script（AppleDaily 是香港苹果日报新闻，已排除）
-# 服务器每周自动更新，上次更新：2026-11-08 22:52 CST，共 14 个分组、1707 条规则
+# 服务器每周自动更新，上次更新：2026-11-08 23:03 CST，共 15 个分组、1709 条规则
 
 # ===== 苹果服务总集 (1614) =====
 DOMAIN-KEYWORD,apple-support.akadns.net
@@ -1736,3 +1736,7 @@ IP-CIDR6,2620:149:a44::/48,no-resolve
 IP-CIDR6,2403:300:a42::/48,no-resolve
 IP-CIDR6,2403:300:a51::/48,no-resolve
 IP-CIDR6,2a01:b740:a42::/48,no-resolve
+
+# ===== 官方查漏·人工补充 (2) =====
+DOMAIN,app-site-association.networking.apple
+DOMAIN,ocsp.digicert.cn
