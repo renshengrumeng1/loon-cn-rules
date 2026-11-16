@@ -11,6 +11,11 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/cn-direct.l
 - 策略选 **DIRECT**；位置放在去广告规则集下面、其他分流上面、FINAL 之前
 - 95 个国内 App / 生态 + ChinaMax 全量，共约 13.8 万条
 - 未含微信、百度贴吧、抖音、支付宝、高德（站长已单独添加）
+- ⚠️ **全量版会让 Loon 崩溃**（13.8 万条撑爆网络扩展内存，2026-11-16 实测确认），请改用精简版 cn-direct-lite.list（同样的 95 个国内 App、8,648 条、247KB，不含 ChinaMax 全量）：
+
+```
+https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/cn-direct-lite.list
+```
 
 ## 2. AI 服务 ai.list
 
