@@ -1,6 +1,6 @@
 # Loon 规则集（自用整理）
 
-五个远程规则文件，配合 Loon 使用。每周从源仓库自动重建更新，不依赖任何 VPS。
+六个远程规则文件，配合 Loon 使用。每周从源仓库自动重建更新，不依赖任何 VPS。
 
 ## 1. 国内直连 cn-direct.list
 
@@ -51,6 +51,17 @@ https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/tiktok.list
 - 策略选**节点策略组**（TikTok 锁区，必须走非大陆节点，如美国/日本组）
 - 位置放在 **cn-direct 上面**（cn-direct 里有一条 USER-AGENT,TikTok* 会把 TikTok 误判直连，放上面先命中走节点）
 - 已剔除与抖音共用的 snssdk.com，抖音直连不受影响
+
+## 6. 加密货币 crypto.list
+
+```
+https://raw.githubusercontent.com/renshengrumeng1/loon-cn-rules/main/crypto.list
+```
+
+- 策略选 **「加密货币」策略组**（建议钉死一个固定节点，别选自动测速组，免得行情长连接被切换掐断）
+- 位置放在 **cn-direct 上面**，先命中先走节点
+- 交易所（币安/OKX/Bitget/Bybit/Gate/库币/MEXC/Coinbase/Kraken/Crypto.com/HTX/Upbit/Deribit 等）+ 钱包（MetaMask/TrustWallet/TokenPocket 等）+ 行情与链上工具（CoinGecko/CoinMarketCap/Etherscan/BscScan/TradingView 等），共 211 条
+- 已剔除已倒闭的 FTX、LocalBitcoins 与过宽的 crunchbase.com
 
 ## 数据来源
 
