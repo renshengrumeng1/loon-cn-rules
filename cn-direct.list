@@ -1,6 +1,6 @@
 # 国内常用 App 直连规则（Loon 远程规则版，策略在 Loon 里选 DIRECT）
-# 数据来源：blackmatrix7/ios_rule_script（经 luestr/ShuntRules 索引整理），已剔除微信/贴吧/抖音/支付宝/高德
-# 服务器每周自动更新，上次更新：2026-11-05 10:13 CST，共 95 个分组、138018 条规则
+# 数据来源：blackmatrix7/ios_rule_script（经 luestr/ShuntRules 索引整理），已剔除微信（用户单独加）
+# 服务器每周自动更新，上次更新：2026-11-18 23:19 CST，共 99 个分组、138056 条规则
 
 # ===== 腾讯系 (2543) =====
 USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
@@ -8837,10 +8837,69 @@ DOMAIN-SUFFIX,styledata.cn
 DOMAIN-SUFFIX,uniny.com
 DOMAIN-SUFFIX,xdgogogo.com
 
-# ===== 国内全量ChinaMax (129371) =====
+# ===== 抖音 (3) =====
+DOMAIN,lf3-static.bytednsdoc.com
+DOMAIN,v5-dy-o-abtest.zjcdn.com
+DOMAIN-SUFFIX,snssdk.com
+
+# ===== 百度贴吧 (32) =====
+DOMAIN,als.baidu.com
+DOMAIN,cdn.hiphotos.baidu.com
+DOMAIN,cpro.baidustatic.com
+DOMAIN,crab.baidu.com
+DOMAIN,dlswbr.baidu.com
+DOMAIN,ecma.bdimg.com
+DOMAIN,feed-image.baidu.com
+DOMAIN,fex.bdstatic.com
+DOMAIN,gomediago.baidu.com
+DOMAIN,gsp0.baidu.com
+DOMAIN,gss0.bdstatic.com
+DOMAIN,hmma.baidu.com
+DOMAIN,mediago-static.cdn.bcebos.com
+DOMAIN,miaowu.baidu.com
+DOMAIN,mobads-log.baidu.com
+DOMAIN,mobads.baidu.com
+DOMAIN,ns-strategy.cdn.bcebos.com
+DOMAIN,nsclick.baidu.com
+DOMAIN,passport.baidu.com
+DOMAIN,sofire.bdstatic.com
+DOMAIN,tb.himg.baidu.com
+DOMAIN,tb1.bdstatic.com
+DOMAIN,tb2.bdstatic.com
+DOMAIN,tb3.bdstatic.com
+DOMAIN,tb4.bdstatic.com
+DOMAIN,tb5.bdstatic.com
+DOMAIN,tb6.bdstatic.com
+DOMAIN,tbmsg.baidu.com
+DOMAIN,tieba-ares.cdn.bcebos.com
+DOMAIN,tiebac.baidu.com
+DOMAIN,tiebapic.baidu.com
+DOMAIN-SUFFIX,tieba.baidu.com
+
+# ===== 支付宝 (12) =====
+DOMAIN-SUFFIX,alipay
+DOMAIN-SUFFIX,alipay-corp.com
+DOMAIN-SUFFIX,alipay-eco.com
+DOMAIN-SUFFIX,alipay-inc.com
+DOMAIN-SUFFIX,alipay-traffic.com
+DOMAIN-SUFFIX,alipay.net
+DOMAIN-SUFFIX,alipaydesign.com
+DOMAIN-SUFFIX,alipaydev.com
+DOMAIN-SUFFIX,alipayeshop.com
+DOMAIN-SUFFIX,ifaa.org.cn
+DOMAIN-SUFFIX,luohanacademy.com
+DOMAIN-SUFFIX,sinopayment.com.cn
+
+# ===== 高德地图 (5) =====
+DOMAIN-SUFFIX,a-map.cn
+DOMAIN-SUFFIX,a-map.co
+DOMAIN-SUFFIX,a-map.link
+DOMAIN-SUFFIX,a-map.vip
+DOMAIN-SUFFIX,anav.com
+
+# ===== 国内全量ChinaMax (129357) =====
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,ms
-DOMAIN-SUFFIX,alipay
 DOMAIN-SUFFIX,anquan
 DOMAIN-SUFFIX,baidu
 DOMAIN-SUFFIX,citic
@@ -30176,9 +30235,6 @@ DOMAIN-SUFFIX,a-b.cc
 DOMAIN-SUFFIX,a-du.net
 DOMAIN-SUFFIX,a-jazz.com
 DOMAIN-SUFFIX,a-liai.com
-DOMAIN-SUFFIX,a-map.co
-DOMAIN-SUFFIX,a-map.link
-DOMAIN-SUFFIX,a-map.vip
 DOMAIN-SUFFIX,a-startech.com
 DOMAIN-SUFFIX,a-sy.com
 DOMAIN-SUFFIX,a-xun.com
@@ -31813,15 +31869,7 @@ DOMAIN-SUFFIX,aliog.com
 DOMAIN-SUFFIX,alionexpo.com
 DOMAIN-SUFFIX,alipan.com
 DOMAIN-SUFFIX,alipansou.com
-DOMAIN-SUFFIX,alipay-corp.com
-DOMAIN-SUFFIX,alipay-eco.com
-DOMAIN-SUFFIX,alipay-inc.com
-DOMAIN-SUFFIX,alipay-traffic.com
-DOMAIN-SUFFIX,alipay.net
 DOMAIN-SUFFIX,alipayauto.com
-DOMAIN-SUFFIX,alipaydesign.com
-DOMAIN-SUFFIX,alipaydev.com
-DOMAIN-SUFFIX,alipayeshop.com
 DOMAIN-SUFFIX,alipayhk.com
 DOMAIN-SUFFIX,alipcsec.com
 DOMAIN-SUFFIX,aliplay.com
@@ -32110,7 +32158,6 @@ DOMAIN-SUFFIX,anandzhang.com
 DOMAIN-SUFFIX,ananlighting.com
 DOMAIN-SUFFIX,ananpet.com
 DOMAIN-SUFFIX,anao.vip
-DOMAIN-SUFFIX,anav.com
 DOMAIN-SUFFIX,anbang-life.com
 DOMAIN-SUFFIX,anbanggroup.com
 DOMAIN-SUFFIX,anbaool.com
@@ -79953,7 +80000,6 @@ DOMAIN-SUFFIX,luochenyl.com
 DOMAIN-SUFFIX,luochenzhimu.com
 DOMAIN-SUFFIX,luodian.com
 DOMAIN-SUFFIX,luoganpump.com
-DOMAIN-SUFFIX,luohanacademy.com
 DOMAIN-SUFFIX,luohanyu.cc
 DOMAIN-SUFFIX,luohuedu.net
 DOMAIN-SUFFIX,luojiaci.net
