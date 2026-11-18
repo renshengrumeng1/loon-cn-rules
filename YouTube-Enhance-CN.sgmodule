@@ -1,0 +1,22 @@
+#!name=YouTube增强（去广告）
+#!desc=屏蔽油管广告，开启后台播放、画中画、最高4倍速和移动端便捷控制。\n基于 Maasea 的代码（Apache-2.0），源自 gholts/surge。
+#!category=gholts
+#!arguments=block_upload:true,block_shorts:true,auto_hd:true,block_games:true,block_vertical_live:false,jump_ahead:true,block_store:true,block_ai:true,on_the_go:true
+#!arguments-desc=block_upload\n  └ 移除上传标签页\nblock_shorts\n  └ 移除 Shorts 标签页\nauto_hd\n  └ 优先最高画质（有权限时使用 Premium 码率）\nblock_games\n  └ 移除首页小游戏\nblock_vertical_live\n  └ 移除首页竖屏直播\njump_ahead\n  └ 启用「跳过片段」按钮\nblock_store\n  └ 移除创作者商店、商品卡片和浮层\nblock_ai\n  └ 移除 Ask、AI 摘要等 AI 功能入口\non_the_go\n  └ 启用移动端便捷控制（界面兼容时）
+#!requirement=SYSTEM = 'iOS'
+
+[Script]
+youtube.enhance.ad-break = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\/ad_break(?:\?.*)?$,engine=jsc,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/request.js
+youtube.enhance.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:navigation\/resolve_url|browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=webview,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/response.js,argument="{"blockUpload":{{{block_upload}}},"blockShorts":{{{block_shorts}}},"blockGames":{{{block_games}}},"blockVerticalLive":{{{block_vertical_live}}},"jumpAhead":{{{jump_ahead}}},"autoHd":{{{auto_hd}}},"blockStore":{{{block_store}}},"blockAi":{{{block_ai}}},"onTheGo":{{{on_the_go}}}}"
+youtube.enhance.key = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(?:config|log_event)(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/key.js
+youtube.enhance.ump = type=http-response,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=webview,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/ump.js,argument="{"blockGames":{{{block_games}}},"blockVerticalLive":{{{block_vertical_live}}},"jumpAhead":{{{jump_ahead}}},"autoHd":{{{auto_hd}}},"blockStore":{{{block_store}}},"blockAi":{{{block_ai}}},"onTheGo":{{{on_the_go}}}}"
+youtube.enhance.init = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/request.js,argument="{"autoHd":{{{auto_hd}}}}"
+youtube.enhance.auto-hd = type=http-request,pattern=^https?:\/\/[\w-]+\.googlevideo\.com\/videoplayback(?:\?.*)?$,requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/request.js,argument="{"autoHd":{{{auto_hd}}}}" #!REQUIREMENT "'{{{auto_hd}}}' == 'true'"
+youtube.enhance.log-event = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event(?:\?.*)?$,engine=jsc,script-path=https://raw.githubusercontent.com/gholts/surge/main/scripts/youtube/request.js
+
+[URL Rewrite]
+^https:\/\/www\.youtube\.com\/(pagead|pcs)\/ - reject
+^https:\/\/s\.youtube\.com\/api\/stats\/ads - reject
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, www.youtube.com, s.youtube.com
