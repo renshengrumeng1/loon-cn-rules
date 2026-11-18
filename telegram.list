@@ -1,6 +1,6 @@
 # Telegram 电报分流规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
 # 数据来源：blackmatrix7/ios_rule_script
-# 服务器每周自动更新，上次更新：2026-11-18 23:14 CST，共 1 个分组、55 条规则
+# 服务器每周自动更新，上次更新：2026-11-18 23:30 CST，共 2 个分组、82 条规则
 
 # ===== Telegram (55) =====
 DOMAIN,api.imem.app
@@ -58,3 +58,32 @@ IP-CIDR6,2001:67c:4e8::/48
 IP-CIDR6,2001:b28:f23c::/47
 IP-CIDR6,2001:b28:f23f::/48
 IP-CIDR6,2a0a:f280::/29
+
+# ===== IP段与TON·YFamily (27) =====
+DOMAIN-SUFFIX,fragment.com
+DOMAIN-SUFFIX,ton.org
+DOMAIN-SUFFIX,toncenter.com
+IP-CIDR,149.154.160.0/22,no-resolve
+IP-CIDR,149.154.164.0/22,no-resolve
+IP-CIDR,149.154.168.0/22,no-resolve
+IP-CIDR,149.154.172.0/22,no-resolve
+IP-CIDR,185.76.151.0/24,no-resolve
+IP-CIDR,194.221.250.50/32,no-resolve
+IP-CIDR,5.28.195.1/32,no-resolve
+IP-CIDR,5.28.195.2/32,no-resolve
+IP-CIDR,91.105.192.0/23,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,91.108.16.0/21,no-resolve
+IP-CIDR,91.108.16.0/22,no-resolve
+IP-CIDR,91.108.20.0/22,no-resolve
+IP-CIDR,91.108.20.0/23,no-resolve
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,91.108.56.0/23,no-resolve
+IP-CIDR,91.108.8.0/21,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,95.161.64.0/20,no-resolve
+IP-CIDR6,2001:b28:f23c::/48,no-resolve
+IP-CIDR6,2001:b28:f23d::/48,no-resolve
+IP-CIDR6,2a0a:f280:203::/48,no-resolve
+IP-CIDR6,2a0a:f280::/32,no-resolve

@@ -1,7 +1,6 @@
 # 谷歌全家桶分流规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
-# 含 Google 搜索/Drive/Voice/FCM/Earth/Gemini/Bard；已剔除 YouTube 与 YouTube Music（油管单独走你自己的规则）
-# 数据来源：blackmatrix7/ios_rule_script
-# 服务器每周自动更新，上次更新：2026-11-18 23:11 CST，共 8 个分组、804 条规则
+# 含 Google 搜索/Drive/Voice/FCM/Earth/Gemini/Bard；已剔除 YouTube 与 YouTube Music（油管单独走你自己的规则）；数据来源：blackmatrix7/ios_rule_script
+# 服务器每周自动更新，上次更新：2026-11-18 23:30 CST，共 9 个分组、845 条规则
 
 # ===== Google 服务总集 (703) =====
 DOMAIN,voice.telephony.goog
@@ -822,3 +821,46 @@ DOMAIN-KEYWORD,generativelanguage
 
 # ===== Bard (1) =====
 DOMAIN,generativelanguage.googleapis.com
+
+# ===== YFamily补全 (41) =====
+DOMAIN-SUFFIX,actifio.com
+DOMAIN-SUFFIX,adtrafficquality.google
+DOMAIN-SUFFIX,ai.studio
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,app-ads-services.com
+DOMAIN-SUFFIX,app-analytics-services-att.com
+DOMAIN-SUFFIX,docs.new
+DOMAIN-SUFFIX,doubleclick.cn
+DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebase.dev
+DOMAIN-SUFFIX,firebase.io
+DOMAIN-SUFFIX,fitbit.com
+DOMAIN-SUFFIX,flow.google
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,get.new
+DOMAIN-SUFFIX,get.rsvp
+DOMAIN-SUFFIX,google-access.net
+DOMAIN-SUFFIX,google.co
+DOMAIN-SUFFIX,googleads-cn.com
+DOMAIN-SUFFIX,googleads.com
+DOMAIN-SUFFIX,googleadsserving.cn
+DOMAIN-SUFFIX,googlezip.net
+DOMAIN-SUFFIX,haplorrhini.com
+DOMAIN-SUFFIX,hey.boo
+DOMAIN-SUFFIX,idx.dev
+DOMAIN-SUFFIX,jules.google
+DOMAIN-SUFFIX,kaggle.net
+DOMAIN-SUFFIX,kaggleusercontent.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,new.day
+DOMAIN-SUFFIX,notebook.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,opal.google
+DOMAIN-SUFFIX,openxla.org
+DOMAIN-SUFFIX,pub.dev
+DOMAIN-SUFFIX,sheets.new
+DOMAIN-SUFFIX,slides.new
+DOMAIN-SUFFIX,tenor.com
+DOMAIN-SUFFIX,whats.new
+DOMAIN-KEYWORD,googlesource

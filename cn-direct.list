@@ -1,6 +1,6 @@
 # 国内常用 App 直连规则（Loon 远程规则版，策略在 Loon 里选 DIRECT）
 # 数据来源：blackmatrix7/ios_rule_script（经 luestr/ShuntRules 索引整理），已剔除微信（用户单独加）
-# 服务器每周自动更新，上次更新：2026-11-18 23:19 CST，共 99 个分组、138056 条规则
+# 服务器每周自动更新，上次更新：2026-11-18 23:29 CST，共 100 个分组、138074 条规则
 
 # ===== 腾讯系 (2543) =====
 USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
@@ -138255,3 +138255,23 @@ IP-CIDR6,2c0f:f7a8:8150::/48
 IP-CIDR6,2c0f:f7a8:815f::/48
 IP-CIDR6,2c0f:f7a8:8211::/48
 IP-CIDR6,2c0f:f7a8:9041::/48
+
+# ===== 国内AI·直连补充·YFamily (18) =====
+DOMAIN-SUFFIX,qoder.cn
+DOMAIN-SUFFIX,qoder.com.cn
+DOMAIN-SUFFIX,anthropic.com.cn
+DOMAIN-SUFFIX,coze.cn
+DOMAIN-SUFFIX,cozebaas.cn
+DOMAIN-SUFFIX,cozefn.cn
+DOMAIN-SUFFIX,cozeide.cn
+DOMAIN-SUFFIX,marscode.com.cn
+DOMAIN-SUFFIX,mcprev.cn
+DOMAIN-SUFFIX,yoma.cn
+DOMAIN-SUFFIX,modelscope.cn
+DOMAIN-SUFFIX,modelscope.com
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,ppio.cn
+DOMAIN-SUFFIX,siliconflow.cn
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,zhipuai.cn

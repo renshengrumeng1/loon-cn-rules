@@ -1,6 +1,6 @@
 # X / Twitter 分流规则（Loon 远程规则版，策略在 Loon 里选你的节点策略组）
 # 数据来源：blackmatrix7/ios_rule_script
-# 服务器每周自动更新，上次更新：2026-11-18 23:14 CST，共 1 个分组、39 条规则
+# 服务器每周自动更新，上次更新：2026-11-18 23:30 CST，共 2 个分组、42 条规则
 
 # ===== Twitter (39) =====
 DOMAIN-SUFFIX,ads-twitter.com
@@ -42,3 +42,8 @@ IP-CIDR,199.96.56.0/21
 IP-CIDR,202.160.128.0/22
 IP-CIDR,209.237.192.0/19
 IP-CIDR,69.195.160.0/19
+
+# ===== YFamily补全 (3) =====
+DOMAIN-SUFFIX,twitter.map.fastly.net
+IP-CIDR,104.244.42.0/21,no-resolve
+IP-CIDR,199.16.156.0/22,no-resolve

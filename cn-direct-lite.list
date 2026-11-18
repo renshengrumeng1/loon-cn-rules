@@ -1,6 +1,6 @@
 # 国内常用 App 直连规则·精简版（Loon 远程规则版，策略在 Loon 里选 DIRECT）
 # 数据来源：blackmatrix7/ios_rule_script（经 luestr/ShuntRules 索引整理），已剔除微信（用户单独加）；仅含国内 App/生态部分，不含 ChinaMax 全量（全量版 13.8 万条会撑爆 Loon 网络扩展内存导致崩溃，2026-11-16 用户实测禁用全量版后不再崩溃）
-# 服务器每周自动更新，上次更新：2026-11-18 23:20 CST，共 99 个分组、8700 条规则
+# 服务器每周自动更新，上次更新：2026-11-18 23:30 CST，共 100 个分组、8725 条规则
 
 # ===== 腾讯系 (2543) =====
 USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
@@ -8899,3 +8899,30 @@ DOMAIN-SUFFIX,anav.com
 
 # ===== 拼多多·实测补充 (1) =====
 DOMAIN-SUFFIX,pinduoduo.net
+
+# ===== 国内AI·直连补充·YFamily (25) =====
+DOMAIN-SUFFIX,qianwen.com
+DOMAIN-SUFFIX,qoder.cn
+DOMAIN-SUFFIX,qoder.com.cn
+DOMAIN-SUFFIX,tongyi.com
+DOMAIN-SUFFIX,anthropic.com.cn
+DOMAIN-SUFFIX,coze.cn
+DOMAIN-SUFFIX,cozebaas.cn
+DOMAIN-SUFFIX,cozefn.cn
+DOMAIN-SUFFIX,cozeide.cn
+DOMAIN-SUFFIX,marscode.com.cn
+DOMAIN-SUFFIX,mcprev.cn
+DOMAIN-SUFFIX,yoma.cn
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,deepseeksvc.com
+DOMAIN-SUFFIX,modelscope.cn
+DOMAIN-SUFFIX,modelscope.com
+DOMAIN-SUFFIX,kimi.com
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,ppio.cn
+DOMAIN-SUFFIX,siliconflow.cn
+DOMAIN-SUFFIX,stepfun.com
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,zhipuai.cn
+DOMAIN-SUFFIX,zhipucn.com
